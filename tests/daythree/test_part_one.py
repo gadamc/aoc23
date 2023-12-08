@@ -37,6 +37,7 @@ _test2_data = """
 .664.598.*""".strip()
 _test2_solution = 4361
 
+
 @pytest.mark.parametrize(
     "input_data,expected_output",
     [

@@ -86,9 +86,3 @@ def solution(text_block: str, step: bool = False) -> int:
             break
         running_sum += _
     return running_sum
-
-
-def open_data_and_run(step: bool = True):
-    _challenge_data = (Path(__file__).parent / "data.dat").open().read()
-    print(solution(_challenge_data, step))
-

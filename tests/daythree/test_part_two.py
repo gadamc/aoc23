@@ -90,6 +90,7 @@ in_line_test_solution8 = {0: []}
 in_line_test_9 = "*9........"
 in_line_test_solution9 = {0: ['9']}
 
+
 @pytest.mark.parametrize(
     "input_data,expected_output",
     [
@@ -144,31 +145,31 @@ def test_in_line_positions(input_data: str, expected_output: dict) -> None:
     assert test_module.check_machineids_near_gears_in_line(input_data) == expected_output
 
 
-in_line_test_1 =       "617*......"
+in_line_test_1 = "617*......"
 adjacent_line_test_1 = "467..114.."
 in_line_test_1_gear_pos_solutions = {3: ['617', '467']}
 
-in_line_test_2 =       ".17*......"
+in_line_test_2 = ".17*......"
 adjacent_line_test_2 = "...5.114.."
 in_line_test_2_gear_pos_solutions = {3: ['17', '5']}
 
-in_line_test_3 =       ".17*......"
+in_line_test_3 = ".17*......"
 adjacent_line_test_3 = "....5.114."
 in_line_test_3_gear_pos_solutions = {3: ['17', '5']}
 
-in_line_test_4 =       ".........*"
+in_line_test_4 = ".........*"
 adjacent_line_test_4 = "......114."
 in_line_test_4_gear_pos_solutions = {9: ['114']}
 
-in_line_test_5 =       ".....12*.."
+in_line_test_5 = ".....12*.."
 adjacent_line_test_5 = "......114."
-in_line_test_5_gear_pos_solutions = {7: ['12','114']}
+in_line_test_5_gear_pos_solutions = {7: ['12', '114']}
 
-in_line_test_6 =       ".17*......"
+in_line_test_6 = ".17*......"
 adjacent_line_test_6 = "..5...114."
 in_line_test_6_gear_pos_solutions = {3: ['17', '5']}
 
-in_line_test_7 =       "..17*....."
+in_line_test_7 = "..17*....."
 adjacent_line_test_7 = ".51....114"
 in_line_test_7_gear_pos_solutions = {4: ['17']}
 

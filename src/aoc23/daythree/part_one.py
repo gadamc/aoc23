@@ -1,6 +1,5 @@
 from typing import Iterator, List, Tuple
 import re
-from pathlib import Path
 
 # Compile the regex pattern
 pattern = re.compile(r'\d+')

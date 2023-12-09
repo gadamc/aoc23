@@ -1,6 +1,5 @@
-from typing import Iterator, List, Tuple
+from typing import Tuple
 import re
-from pathlib import Path
 
 from . import part_one
 
